@@ -1,7 +1,6 @@
 import express, { Request, Response } from "express";
 const router = express.Router();
 
-router.use("/graphql", () => {});
 router.use(express.static("../../public"));
 
 router.use("*", (req: Request, res: Response) =>

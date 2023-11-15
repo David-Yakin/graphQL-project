@@ -1,5 +1,11 @@
+import RecipesPage from "./featchers/recipes/pages/RecipesPage";
+
 const App = () => {
-  return <div>app works!</div>;
+  return (
+    <div>
+      <RecipesPage />
+    </div>
+  );
 };
 
 export default App;

@@ -17,6 +17,7 @@ import cors, { CorsOptionsDelegate } from "cors";
 // };
 
 // const corsHandler = cors(corsOptions);
+
 const corsHandler = cors();
 
 export default corsHandler;
