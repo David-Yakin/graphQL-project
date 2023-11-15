@@ -1,9 +1,8 @@
 import chalk from "chalk";
 import connectToMongoDb from "./dataAccessLayer/mongoDb";
-
 import { startStandaloneServer } from "@apollo/server/standalone";
 
-import server from "./apolloServer";
+import server from "./apollo/apolloServer";
 
 startStandaloneServer(server, {
   listen: { port: 4000 },
