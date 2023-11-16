@@ -1,17 +1,3 @@
-export const typeDefs = `#graphql
-type Query {
-    getRecipes: [Recipe]
-}
+import recipeTypes from "../recipes/apollo/typeDef/recipeTypes";
 
-type Ingredient {
-    name: String
-    measure: String
-}
-
-type Recipe {
-    _id: ID
-    title: String!
-    ingredients: [Ingredient]
-    instructions: [String]
-}
-`;
+export const typeDefs = `${recipeTypes} `;
