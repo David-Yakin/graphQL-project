@@ -10,7 +10,11 @@ export const getRecipes = async () => {
   }
 };
 
-export const getRecipe = async (_: any, { id }: { id: string }) => {
+interface GetRecipeInterface {
+  id: string;
+}
+
+export const getRecipe = async (_: any, { id }: GetRecipeInterface) => {
   try {
     const recipes = await Recipe.findById(id);
     return recipes;

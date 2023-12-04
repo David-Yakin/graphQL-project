@@ -4,7 +4,7 @@ import recipeTypes, {
 import bookTypes, { booksTypeQueries } from "../books/typeDefs/booksTypes";
 import booksTypes from "../books/typeDefs/booksTypes";
 
-export const typeDefs = `#graphql   
+const typeDefs = `#graphql   
 
   ${booksTypes}
   ${recipeTypes}
@@ -15,3 +15,5 @@ export const typeDefs = `#graphql
   } 
 
    `;
+
+export default typeDefs;
