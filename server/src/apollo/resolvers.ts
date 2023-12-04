@@ -1,7 +1,11 @@
-import recipesQueries from "../recipes/apollo/queries/recipesQueries";
+import recipesQueries from "../recipes/queries/recipesQueries";
+import booksQueries from "../books/queries/booksQueries";
 
-export const resolvers = {
+const resolvers = {
   Query: {
+    ...booksQueries,
     ...recipesQueries,
   },
 };
+
+export default resolvers;

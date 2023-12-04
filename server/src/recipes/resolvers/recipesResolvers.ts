@@ -9,3 +9,13 @@ export const getRecipes = async () => {
     return null;
   }
 };
+
+export const getRecipe = async (_: any, { id }: { id: string }) => {
+  try {
+    const recipes = await Recipe.findById(id);
+    return recipes;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};
